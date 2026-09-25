@@ -1,0 +1,299 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0" />
+
+    <title>@ViewData["Title"] - Birhanu Baye</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet"
+          href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Your CSS -->
+    <link rel="stylesheet"
+          href="~/css/site.css"
+          asp-append-version="true" />
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+
+            <div class="container">
+
+                <!-- Logo / Name -->
+
+                <a class="navbar-brand"
+                   asp-controller="Home"
+                   asp-action="Index">
+
+                    Birhanu Baye
+
+                </a>
+
+
+                <!-- Mobile menu button -->
+
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+
+                <!-- Navigation -->
+
+                <div class="collapse navbar-collapse"
+                     id="navbarNav">
+
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item">
+
+                            <a class="nav-link"
+                               asp-controller="Home"
+                               asp-action="Index">
+
+                                Home
+
+                            </a>
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                            <a class="nav-link"
+                               asp-controller="Home"
+                               asp-action="About">
+
+                                About
+
+                            </a>
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                            <a class="nav-link"
+                               asp-controller="Home"
+                               asp-action="Skills">
+
+                                Skills
+
+                            </a>
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                            <a class="nav-link"
+                               asp-controller="Home"
+                               asp-action="Experience">
+
+                                Experience
+
+                            </a>
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                            <a class="nav-link"
+                               asp-controller="Home"
+                               asp-action="Projects">
+
+                                Projects
+
+                            </a>
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                            <a class="nav-link"
+                               asp-controller="Home"
+                               asp-action="Contact">
+
+                                Contact
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= PAGE CONTENT ================= -->
+
+    <main>
+
+        @RenderBody()
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="portfolio-footer">
+
+        <div class="container">
+
+            <div class="row">
+
+                <!-- About -->
+
+                <div class="col-md-4">
+
+                    <h5>Birhanu Baye</h5>
+
+                    <p>
+                        Core Banking Engineer passionate about
+                        banking technology, software development,
+                        databases and financial technology.
+                    </p>
+
+                </div>
+
+
+                <!-- Quick Links -->
+
+                <div class="col-md-4">
+
+                    <h5>Quick Links</h5>
+
+                    <ul class="footer-links">
+
+                        <li>
+                            <a asp-controller="Home"
+                               asp-action="Index">
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a asp-controller="Home"
+                               asp-action="About">
+                                About
+                            </a>
+                        </li>
+
+                        <li>
+                            <a asp-controller="Home"
+                               asp-action="Skills">
+                                Skills
+                            </a>
+                        </li>
+
+                        <li>
+                            <a asp-controller="Home"
+                               asp-action="Projects">
+                                Projects
+                            </a>
+                        </li>
+
+                        <li>
+                            <a asp-controller="Home"
+                               asp-action="Contact">
+                                Contact
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Social -->
+
+                <div class="col-md-4">
+
+                    <h5>Connect With Me</h5>
+
+                    <p>
+
+                        <a href="https://www.linkedin.com/in/birhanu-baye-822b803a"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            LinkedIn
+
+                        </a>
+
+                    </p>
+
+                    <p>
+
+                        <a href="YOUR_GITHUB_URL"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            GitHub
+
+                        </a>
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <hr />
+
+
+            <div class="text-center">
+
+                <p class="mb-0">
+
+                    © @DateTime.Now.Year Birhanu Baye.
+                    All Rights Reserved.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="~/js/site.js"
+            asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+
+</html>
