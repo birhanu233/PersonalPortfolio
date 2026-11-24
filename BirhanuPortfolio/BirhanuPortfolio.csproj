@@ -7,10 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="..\..\test.png" Link="wwwroot\test.png" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Folder Include="wwwroot\Images\" />
     <Folder Include="wwwroot\documents\" />
   </ItemGroup>
