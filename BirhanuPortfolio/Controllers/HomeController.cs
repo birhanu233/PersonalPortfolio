@@ -34,24 +34,6 @@ namespace YourProjectName.Controllers
             return View();
         }
 
-        public IActionResult ProfileImage()
-        {
-            var imagePath = Path.Combine(
-                Directory.GetCurrentDirectory(),
-                "wwwroot",
-                "Images",
-                "profile.jpg"
-            );
-
-            if (!System.IO.File.Exists(imagePath))
-            {
-                return NotFound();
-            }
-
-            return PhysicalFile(
-                imagePath,
-                "image/jpeg"
-            );
-        }
+ 
     }
 }
