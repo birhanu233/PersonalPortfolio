@@ -39,7 +39,7 @@ namespace YourProjectName.Controllers
             var imagePath = Path.Combine(
                 Directory.GetCurrentDirectory(),
                 "wwwroot",
-                "images",
+                "Images",
                 "profile.jpg"
             );
 
